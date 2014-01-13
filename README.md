@@ -2,8 +2,8 @@
  
 ##Learning Competencies 
 
-Use instance variables and accessor methods effectively
-Work with objects in Ruby
+* Use instance variables and accessor methods effectively
+* Work with objects in Ruby
 
 ##Summary 
 
