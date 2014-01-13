@@ -2,6 +2,9 @@
  
 ##Learning Competencies 
 
+Use instance variables and accessor methods effectively
+Work with objects in Ruby
+
 ##Summary 
 
  A central component of good object-oriented design is understanding how much of an object to *expose*.
@@ -12,9 +15,9 @@ As a general rule, you should only expose as much of an object as is needed for 
 
 To play with this principle, let's build a simple `BankAccount` class that stores information about a bank account.
 
-## Objectives
+##Releases
 
-### Def initialize
+###Release 0 : Initialize It
 
 Define the class `BankAccount`.
 
@@ -26,7 +29,9 @@ Define an `initialize` method that takes three arguments and assigns them to the
 my_acct = BankAccount.new("Junipero Serra", "Checking", "347-923-239")
 ```
 
-### Redefine to_s
+###Release 1: Add Functionality
+
+####Redefine to_s
 
 One more requirement: define an instance method `to_s` that will return a string with information about the account.
 
@@ -48,7 +53,7 @@ str = "My account information is #{my_acct}"
 
 How does that work?
 
-### Define getter methods
+#### Define getter methods
 
 When you create a new instance of `BankAccount`, do you have access to any of the values stored in its instance variables?  No?  Good.
 
@@ -58,13 +63,13 @@ Which of the instance variables should have associated *getter* methods?
 
 Think about the implications behind defining a getter method.  Which variables should expose themselves in this way?  Which values should be hidden and protected from the outside world?
 
-### Define setter methods
+#### Define setter methods
 
 Now think about which variables should be able to be *written* to.
 
 Then define your setter method(s).
 
-### Hide the account
+#### Hide the account
 
 You probably recognized that it might not be a good idea to expose the account number via a getter or setter method.  That is just the kind of information that should remain private.
 
@@ -72,9 +77,7 @@ Sometimes, though, it is useful to expose part of a value.  If a user has many c
 
 How would you get around this problem?  What kind of method can you define that will return enough information about the account to be able to distinguish it from other accounts, without exposing the full number? 
 
-##Releases
-###Release 0 
 
-##Optimize Your Learning 
+<!-- ##Optimize Your Learning  -->
 
 ##Resources
