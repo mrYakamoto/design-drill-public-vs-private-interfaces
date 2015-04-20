@@ -1,11 +1,11 @@
-# Design Drill Public Vs Private Interfaces 
- 
-##Learning Competencies 
+# Design Drill Public Vs Private Interfaces
+
+##Learning Competencies
 
 * Use instance variables and accessor methods effectively
 * Work with objects in Ruby
 
-##Summary 
+##Summary
 
  A central component of good object-oriented design is understanding how much of an object to *expose*.
 
@@ -51,7 +51,7 @@ str = "My account information is #{my_acct}"
 # => "My account information is Junipero Serra: Checking# *****3239"
 ```
 
-How does that work?
+Write a test for `to_s` to make sure it works as you expect.
 
 #### Define getter methods
 
@@ -63,11 +63,13 @@ Which of the instance variables should have associated *getter* methods?
 
 Think about the implications behind defining a getter method.  Which variables should expose themselves in this way?  Which values should be hidden and protected from the outside world?
 
+Write tests for your getter methods.
+
 #### Define setter methods
 
 Now think about which variables should be able to be *written* to.
 
-Then define your setter method(s).
+Then define your setter method(s) and write tests.
 
 #### Hide the account
 
@@ -75,9 +77,8 @@ You probably recognized that it might not be a good idea to expose the account n
 
 Sometimes, though, it is useful to expose part of a value.  If a user has many checking accounts, then it might be useful to display some kind of information that allows them to distinguish between the accounts without seeing the full account number.
 
-How would you get around this problem?  What kind of method can you define that will return enough information about the account to be able to distinguish it from other accounts, without exposing the full number? 
+How would you get around this problem?  What kind of method can you define that will return enough information about the account to be able to distinguish it from other accounts, without exposing the full number?
 
-
-<!-- ##Optimize Your Learning  -->
+And, of course, you know what's coming... write tests!
 
 ##Resources
